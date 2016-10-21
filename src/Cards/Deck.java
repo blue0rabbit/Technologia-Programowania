@@ -6,7 +6,21 @@ import java.util.List;
 
 public class Deck 
 {
-	public List<Card> DeckOfCards = new ArrayList<Card>();
+	List<Card> DeckOfCards = new ArrayList<Card>();
+	public Deck(String Jokers)
+	{
+		if(Jokers == "Y")
+		{
+			DeckOfCards.add(new Card("Red", "Joker"));
+			DeckOfCards.add(new Card("Black", "Joker"));
+		
+		}
+		else if(Jokers == "N")
+		{
+			
+		}
+	}
+	
 	public List<Card> DeckGenerate ()
 	{
 		List<String> PackedCard = new ArrayList<String>();
