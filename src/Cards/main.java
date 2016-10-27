@@ -8,8 +8,9 @@ class main
 	
 	public static void main(String[] args)
 	{
-		Deck obj = new Deck();
+		Deck obj = new Deck("Y");
 		obj.DeckGenerate();
+		//obj.DeckRandomize();
 		obj.PrintDeck();
 		//ArrayList<Card> HelpfulDesk = new ArrayList<Card>();
 		//obj.DeckRandomize(HelpfulDesk);

@@ -23,7 +23,7 @@ public class DeckTestJunit4
 		deck.DeckGenerate();
 	}
 	
-	@Test(expected = Exception.Desk)
+	@Test(expected=IndexOutOfBoundsException.class)
 	public void ExceptionChecking()
 	{
 		System.out.println(deck.DeckRandomize().get(122).showSign());
